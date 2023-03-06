@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Outset</title>
+
+<style>
+   
+    .exemplo{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-width: 30px;
+    border-style: solid;
+    border-image-slice: 10;
+    border-image-source: url(assets/Untitled.png);
+    border-image-slice: 190; 
+    border-image-repeat: round;
+    margin:50px auto;
+    border-image-outset: 10px 50px 70px 90px;
+
+}
+
+   
+
+
+</style>    
+</head>
+<body>
+    <Header><h1>Image Outset</h1>
+  
+
+    
+
+    </Header>
+    
+    <main>
+      
+        <section>
+
+            <p>Por meio da propriedade <code>Image Outset </code> o <code>image-source</code> irá afastar ou se aproximar do elemento
+                1º Valor: todas bordas;
+                2º Valor: cima e baixo;
+                3º Valor: cima,lateral e baixo;
+                4º Valor: cima, direita, baixo e esquerda.  </p>
+        
+                <div class="exemplo"></div>
+    
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombra nos Elementos</title>
+
+<style>
+    div{
+    width: 500px;
+    height: 200px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(78, 37, 117);
+    margin: 20px auto;
+    background-color: rgb(162, 121, 44);
+
+    box-shadow: inset 10px 15px 10px 7px lightsalmon, 25px 32px 8px cornflowerblue ; 
+    } 
+
+   img{
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    object-fit: contain;
+
+    box-shadow: 10px 10px 35px yellow;
+    filter: drop-shadow(10px 10px 5px violet);
+   }
+
+
+
+</style>    
+</head>
+<body>
+    <Header><h1> Propriedade: <code> box-shadow</code></h1>
+    <p></p>
+    </Header>
+    
+    <main>
+        <section>
+            <P> Os valores da sombra são definidos na horizontal, vertical, propagação da sombra desfoque e cor.
+                Possivel adicionar varias camadas de sombra é só adicionar por virgula. 
+            <code>inset</code> faz com que a sombra fique dentro do elemento</P>
+       
+                <div></div>
+             <br>   
+        </section>
+        
+        <section>
+            <p>Adição de imagens externas, por meio do <code>filter:drop-shadow()</code> é possivel aplicar sombras no interior
+            da imagem.</p>
+       
+              <img id="one-piece" src="https://logodownload.org/wp-content/uploads/2013/12/apple-logo-1.png">
+                
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

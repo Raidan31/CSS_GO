@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Repeat</title>
+
+<style>
+
+    .exemplo{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-width: 20px;
+    border-style: solid;
+    border-image-slice: 10;
+    border-image-source: url(assets/Untitled.png);
+    border-image-slice: 167; 
+    border-image-repeat:repeat;  
+}
+    .exemplo2{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-width: 20px;
+    border-style: solid;
+    border-image-slice: 10;
+    border-image-source: url(assets/Untitled.png);
+    border-image-slice: 167; 
+    border-image-repeat:stretch;  
+}
+
+.exemplo3{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-width: 20px;
+    border-style: solid;
+    border-image-slice: 10;
+    border-image-source: url(assets/Untitled.png);
+    border-image-slice: 167; 
+    border-image-repeat:round;  
+}
+.exemplo4{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-width: 20px;
+    border-style: solid;
+    border-image-slice: 10;
+    border-image-source: url(assets/Untitled.png);
+    border-image-slice: 167; 
+    border-image-repeat:space repeat;  
+}
+
+
+</style>    
+</head>
+<body>
+    <Header><h1>Image Repeat</h1>
+  
+
+    
+
+    </Header>
+    
+    <main>
+      
+        <section>
+
+            <p>Por meio da propriedade <code>Image Repeat </code> é possivel controlar se a imagem vai repetir ou não.
+            aceita quatro valores:Repeat, stretch, round e space. Usando dois valores(ex:Repeat e space), os dois valores serão aplicados
+            na vertical e na horizontal.  </p>
+        
+                <div class="exemplo"></div>
+    
+        </section>
+
+        <section>
+
+            <p>Por meio da propriedade <code>Image stretch </code> estica a imagem. 
+            Trabalha com as imagens presentes no 5,6,7 e 8(slice)</p>
+        
+                <div class="exemplo2"></div>
+    
+        </section>
+
+        <section>
+
+            <p>Por meio da propriedade <code>Image round </code> vai evitar cortar a imagem vai tentar fazer a imagem caber no espaço. 
+            </p>
+                <div class="exemplo3"></div>
+    
+        </section>
+
+        <section>
+
+            <p>Por meio da propriedade <code>Image space </code> se área não poder ser preenchida por completo a imagem será preenchida por
+                espaço. 
+            </p>
+                <div class="exemplo4"></div>
+    
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

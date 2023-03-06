@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Space</title>
+
+<style>
+    p {
+        width: 200px;
+        border-style: solid;
+        background-color: lightgreen;
+        
+    }
+
+    #nowrap{
+        white-space: nowrap;
+    }
+
+    #pre {
+        white-space: pre;
+    }
+
+    #pre-line {
+        white-space: pre-line;
+    }
+
+    #pre-wrap{
+        white-space: pre-wrap;  
+    }
+
+    #break-space{
+        white-space: break-spaces;
+    }
+</style>    
+</head>
+<body>
+    <Header><h1>White Space</h1>
+    
+    </Header>
+    
+    <main>
+
+        <h2>   <code> white-space</code> define como serão os espaços em branco do texto  </h2>
+        <code> white-space: nowrap;</code>
+
+        <p id="nowrap"> 
+        <!-- Mantem tudo em uma unica linha -->
+         O enredo de Evangelion se passa em 2015, 
+         em um mundo que acabara de ser reconstruído após a 
+         dizimação de metade da humanidade na catástrofe que ficou 
+         conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  </p>
+
+        <code> white-space: pre;</code> 
+        <p id="pre">
+        <!-- Mantem o texto da mesma forma como foi elaborado no html -->
+O enredo de Evangelion se passa em 2015, 
+            em um mundo que acabara de ser reconstruído após a dizimação de 
+            metade da humanidade na catástrofe que ficou conhecida como “Segundo Impacto”. 
+            O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção 
+            da futura capital denominada Tokyo-3. </p>
+
+        <code> white-space: pre-line; </code> 
+        <p id="pre-line">
+        <!-- Ele respeita as quebras de texto porém o texto será encaixado na caixa e encurta os espaços em branco -->
+            O enredo de Evangelion se passa em 2015, 
+            
+            em um mundo que acabara de ser reconstruído após a 
+            
+            dizimação de metade da humanidade na catástrofe que ficou 
+            
+            
+            
+            conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  </p>
+
+        <code> white-space: pre-wrap; </code> 
+        <p id="pre-wrap">
+        <!-- Reseita as quebras de texto e os espaços em branco -->
+            O enredo de Evangelion se passa em 2015, em um mundo que acabara                             
+                         de ser reconstruído após 
+                         
+                         a dizimação de metade da humanidade na catástrofe que ficou conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  </p>
+        
+
+        <code> white-space: break-spaces; </code> 
+        <p id="break-space">
+        <!-- ele faz com que mesmo que tenha espaços o texto caber no contaneir -->
+            O enredo de Evangelion se passa em 2015, 
+            em um mundo que acabara de ser reconstruído após 
+            a dizimação de metade da humanidade na catástrofe que f                                                                                             
+            
+            icou conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  </p>
+
+
+
+        
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

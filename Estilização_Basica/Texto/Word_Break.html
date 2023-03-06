@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Break</title>
+
+<style>
+    p {
+       width: 100px;
+       color: greenyellow;
+       background-color: blueviolet; 
+    }
+
+
+   #normal{
+    word-break: normal;
+   }
+
+   #break-all{
+    word-break: break-all;
+   }
+
+   #breakword{
+    word-break: keep-all;
+   }
+
+</style>    
+</head>
+<body>
+    <Header><h1>Propriedade: <code> word-break</code></h1>
+    
+    </Header>
+    
+    <main>
+        
+        Define quando o texto deve ter uma quebra de linha
+        <br>   
+        <br>
+        <code>word-break: normal;</code>
+        <p id="normal">
+        <!-- As quebras de linhas do texto ocorrem quando tem um espaço em branco ou com hifen -->
+            O enredo de Evangelionsepassaem2015, 
+            em um mundo que acabara de ser reconstruído após a 
+            dizimaçãodemetadedahumanidadenacatástrofequeficou 
+            conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  
+        </p>
+   
+
+        <code>word-break: break-all;</code>
+        <p id="break-all">
+        <!-- Evita que o texto ultrapasse os limites do elemento(container) -->
+            O enredo de Evangelionsepassaem2015, 
+            emummundoqueacabaradeserreconstruído após a 
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  
+        </p>   
+
+
+        <code>word-break: keep-all;</code>
+        <p id="keep-all">
+            <!-- Esta definindo que o texto não deve quebrar a linha quando se tratar de kaji asiaticas, alfabeto normal será tratado como a propriedade normal   -->
+            O enredo de Evangelionsepassaem2015, 
+            emummundoqueacabaradeserreconstruído após a 
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  
+        </p>   
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

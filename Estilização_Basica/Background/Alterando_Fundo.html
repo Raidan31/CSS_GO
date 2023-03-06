@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando Fundo dos Elementos</title>
+
+<style>
+   
+    .exemplo {
+        width: 300px;
+        height: 300px;
+        background-color: palevioletred;
+        background-image: repeating-linear-gradient(To left, black 0 20px, lightpink 20px 40px );
+
+    }
+
+    .exemplo2 {
+        width: 100%;
+        height: 100%;
+        width: 1350px;
+        height: 315PX; ;
+        background-size: contain;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4b/Chainsaw_Man_logo.png), url(https://i.pinimg.com/originals/3b/c0/36/3bc036c7e856b636f1864bb24032fd00.png);
+    }
+
+</style>    
+</head>
+<body>
+    <Header><h1>Alterando Fundo dos Elementos</h1></Header>
+
+    <main>
+        <P>Por meio da propriedade <code>background-image</code> é possivel inserir imagens(png, jpg etc), por meio de assets ou url; </P> 
+        <p> Definir um gradiente de cores (<code> background-image: linear-gradient(cores) ou radial-gradient(cores) </code>); </p> 
+        <p><code>background-image: repeating-linear-gradient(To direção(top, bottom, left ou right), corA espaçamento(0 a X), corB espaçamento(X a 0) );</code></p>
+       
+       
+       <p><a href="https://projects.verou.me/css3patterns/" target="_blank"> Url de um site com diversos backgrounds </a> </p>
+       
+        <section class="exemplo"></section>
+
+        <section class="exemplo2"></section>
+        <b><p>É possivel colocar uma imagem em cima da outra, a primeira imagem colocada será a primeira camada e assim por diante</p></b>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

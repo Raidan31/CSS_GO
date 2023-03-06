@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor_Atrib</title>
+<style>
+    /* seletores definem em quais elementos nós vamos aplicar o CSS
+    1 - Seletor de tag tipo
+    2 - Seletor de ID
+    3 - Seletor de Classes
+    4 - Seletor Universal   
+    5 - Seletor de Atributo
+    */
+   /* Seletor de Atributo: Seleciona elementos que possuam um atributo. */
+
+   /* Seletor de Atributo */
+    /* é possivel selecionar um atributo especifico dada a sua singularidade ou selecionar todos os atributos. 
+   Assim, todos os atributos estão com letra maiúscula, porem apenas Netflix está na cor amarela.
+   Também é possivel, selecionar um texto que é compartilhado entre os atributos para diferencia-los do resto.
+   Utilizando o |= podemos selecionar o exato termo descrito, aqueles que tiverem espaço não irão ser reconhecidos
+   Por meio do ^= é possivel selecionar características especificas do prefixo
+   Já por meio do $= dá pra achar o sufixo específico
+   Procurar por palavra independente da posição em que se encontra *= 
+    */
+   
+   [title="Netflix"] {
+    color: yellow;
+   }
+   [title] {
+    text-transform: uppercase;
+   }
+   [title="Prime"] {
+    color: rgb(38, 2, 2);
+   }
+   
+ /*  [title~="Streaming"] {
+    color: rgb(157, 83, 141);
+   } */
+
+  /* [title|="Streaming"] {
+    color: olive;
+   }
+   [href^="http://"]{ /* procurando por http não https prefixo(primeira palavra)
+    background-color: coral;
+   }
+   [href $="login"]{ /* procurando por login sufixo (ultima palavra)
+    background-color: rgb(141, 80, 255);
+   } */
+
+   [href *="www"]{ /* procurando por qualquer um com www*/
+    background-color: rgb(147, 255, 80);
+   }
+
+</style>
+</head>
+<body>
+    
+    <h1>Streamings</h1>
+
+    <div>
+        <ul>
+            <li >
+                <a title="Netflix" href="https:www.netflix.com" target="_blank"> Netflix </a>
+            </li>
+            <li>
+                <a title="Prime"  href="http://www.primevideo.com/" target="_blank"> Prime Video </a>
+            </li>
+            <li >
+                <a title="Streaming Spotify" href="https:www.spotify.com/login" target="_blank"> Spotify</a>
+            </li>
+            <li>
+                <a title="Streaming-Disney" href=""> Disney Plus </a> 
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

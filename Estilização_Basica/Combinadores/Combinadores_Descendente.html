@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores_Descendente</title>
+<style>
+   
+    /* li li {
+        background-color: green;
+    }
+
+    #lista-01 li {
+        color: aqua;
+    } */
+
+
+    .fundo-verde li{
+        background-color: lightgreen;
+    }
+
+    .fundo-azul li{
+        background-color: lightblue;
+    }
+
+    li{
+        color: red;
+    }
+
+    .fundo-verde #sublista-01 li {
+
+        color: black;
+        
+    }
+</style>
+
+</head>
+<body>
+    <!-- Combinadores: Qual o tipo de relação entre 2 seletores.
+    1 - Combinador Descendente (espaço)
+    Aplica as propriedades CSS apenas em elementos que são descendentes daqueles especificados
+
+    [SELETOR] [COMBINADOR] [SELETOR] ex: li (espaço) li
+    -->
+    <header>
+    <h1> Combinadores Descendente  </h1>
+    </header>
+    
+    <main>
+    <section>
+        <ul>
+             
+            <li class="fundo-verde" id="lista-01">
+                <div>Item 1 </div>
+
+            <ul id="sublista-01">
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+            </li>
+            </ul>
+
+            <li class="fundo-verde" id="lista-02">
+            <div>Item 2 </div>
+
+            <ul id="sublista-02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </li>
+            </ul>
+
+            <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+
+            <ul id="sublista-03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+            </li>
+
+          
+
+        </ul>
+
+    </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

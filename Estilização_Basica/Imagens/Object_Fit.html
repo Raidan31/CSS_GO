@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+
+<style>
+   img {
+    width: 100%;
+    height: 100%;
+    width: 200px;
+    height: 300px;
+    border: 5px solid blue;
+    
+   }
+   #contain{
+    object-fit: contain;
+   }
+
+   #cover{
+    object-fit: cover;
+   }
+
+   #none{
+    object-fit: none;
+   }
+
+   #scale{
+    object-fit: scale-down;
+   }
+
+</style>    
+</head>
+<body>
+    <Header><h1>Propriedade Object Fit</h1></Header>
+    
+    <main>
+        <p>object-fit: Vai determinar como a imagem será dimensionada no elemento, é chamado de container.
+            Sem o object-fit a imagem fica distorcida.
+        </p>
+
+        <code>object-fit: fill;</code> (padrão: coloca a imagem e distorce ela para ficar do tamanho do objeto em que foi colocada)
+
+        <section>
+            <img src="https://i.ytimg.com/vi/wIJauoKFxqk/maxresdefault.jpg" alt="Super Tenguen Toppa Guren Laggan" id="fill">
+        </section>
+
+        <code>object-fit: contain;</code> (redimensionada: a imagem mantem a sua proporção original, porem será redimensionada para caber nos valores da propriedade e não 
+        irá ficar distorcida.)
+       
+        <section>
+            <img src="https://i.ytimg.com/vi/wIJauoKFxqk/maxresdefault.jpg" alt="Super Tenguen Toppa Guren Laggan" id="contain">
+        </section>
+
+        <code>object-fit: cover;</code> (preenche o container sem distorcer)
+
+        <section>
+            <img src="https://i.ytimg.com/vi/wIJauoKFxqk/maxresdefault.jpg" alt="Super Tenguen Toppa Guren Laggan" id="cover">
+        </section>
+
+        <code>object-fit: none;</code> (none: ignora a largura e altura delimitada e mantendo o tamanho original)
+
+        <section>
+            <img src="https://i.ytimg.com/vi/wIJauoKFxqk/maxresdefault.jpg" alt="Super Tenguen Toppa Guren Laggan" id="none">
+        </section>
+        
+        <code>object-fit: scale-down;</code> (scale-down: vai exibir a imagem conforme o menor tamanho entre contain x none)
+
+        <section>
+            <img src="https://i.ytimg.com/vi/wIJauoKFxqk/maxresdefault.jpg" alt="Super Tenguen Toppa Guren Laggan" id="scale">
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

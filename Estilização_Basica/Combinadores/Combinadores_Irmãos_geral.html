@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores Irmãos Geral</title>
+<style>
+   div ~ p {
+    color: rgb(44, 48, 37);
+   }
+   
+   .fundo-azul ~ p {
+    background-color: rgb(109, 109, 168);
+   }
+   
+</style>
+
+</head>
+<body>
+    <!-- 
+    4 - Combinadores Irmãos Geral (~)
+    Vai aplicar o CSS em todas as tags do lado da inicial
+    [seletor] [~] [seletor]
+    
+    div ~ p = Paragrafo 4 - Fora da DIV, Paragrafo 5 - Fora da DIV e Paragrafo 8 - Dentro da DIV, 
+    foram alterados pois estão ao lado do fechamento de uma div.
+     
+    .fundo-azul ~ p = Paragrafo 8, Paragrafo 9 e Paragrafo 10,
+    foram alterados pq estão do lado do fechamento da div class
+
+    -->
+
+    
+    <header>
+    <h1> Combinadores Irmãos Geral  </h1>
+    </header>
+    
+    <main>
+    <section>
+        <div>
+            <p>Paragrafo 1 - Dentro da DIV </p>
+            <p>Paragrafo 2 - Dentro da DIV</p>
+            <span> 
+            <p>Paragrafo 3 - Dentro da DIV, dentro da SPAN</p>
+            </span>         
+        </div>
+
+        <p>Paragrafo 4 - Fora da DIV</p>
+        <p>Paragrafo 5 - Fora da DIV</p>
+
+        <div class="fundo-azul">
+            <p>Paragrafo 6 - Dentro da DIV </p>
+            <p>Paragrafo 7 - Dentro da DIV</p>
+        </div>
+
+        <p>Paragrafo 8 - Dentro da DIV</p>
+        <p>Paragrafo 9 - Dentro da DIV</p>
+        <p>Paragrafo 10 - Dentro da DIV</p>
+
+    </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

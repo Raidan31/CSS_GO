@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Overflow</title>
+
+<style>
+    p {
+       width: 120px;
+       color: greenyellow;
+       background-color: blueviolet;
+       white-space: nowrap; 
+       /* nowrap: unica linha */
+       overflow: hidden;
+    }
+
+
+   #clip{
+    text-overflow: clip;
+   }
+
+   #ellipsis{
+    text-overflow: ellipsis;
+   }
+
+   #string{
+    text-overflow:"Ver mais >";
+   }
+
+</style>    
+</head>
+<body>
+    <Header><h1>Propriedade: <code> text-overflow</code></h1>
+    
+    </Header>
+    
+    <main>
+        
+        Define a forma como será demonstrada que existe mais texto escondido
+        <br>   
+        <br>
+        <code>text-overflow: clip;</code>
+        <p id="clip">
+            <!-- O texto é simplesmente cortado -->
+            O enredo de Evangelion sepassa em 2015, 
+            em um mundo que acabara de ser reconstruído após a 
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”.
+        </p>
+   
+
+        <code>text-overflow: ellipsis;</code>
+        <p id="ellipsis">
+            <!-- No final do texto é adicionado "..." -->
+            O enredo de Evangelion sepassa em 2015, 
+            em um mundo que acabara de ser reconstruído após a 
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”.
+        </p>   
+
+
+        <code>text-overflow: string;</code>
+        <p id="string">
+            <!-- Ver mais é o que vai aparecer no texto escondido(só funciona no Firefox) -->
+            O enredo de Evangelion sepassa em 2015, 
+            em um mundo que acabara de ser reconstruído após a 
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”.
+        </p>   
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

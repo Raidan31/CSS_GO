@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Seletores</title>
+<style>
+    /* Junção de diversos tipos de seletores por meio da virgula
+    h1,p,div, #link-referencia, [id^="botão"]{
+        background-color: rgb(48, 30, 210);
+    }
+
+    .texto, h1, #link-referencia, [id^="botão"]{
+        color: aqua;
+    } 
+    */
+    /* Especificação da seleção, neste caso deve ser tag p e class texto */
+    p.texto{
+        color: rgb(124, 128, 0);
+    }
+
+</style>
+
+</head>
+<body>
+    <header>
+    <h1> Agrupamento de Seletores  </h1>
+    </header>
+    
+    <main>
+    <section>
+        <p class="texto">Podemos aplicar as mesmas regras do CSS para seletores diferentes. Para isso podemos separar os seletores usando uma virgula(,) </p>
+        <div class="texto">
+        <p> Assim não precisamos ficar compiando e colando os mesmos códigos para todos, nós podemos fazer um só bloco de CSS e reutilizar as mesmas regras! </p>
+        </div>   
+    </section>
+
+    <br><br>
+    <a id="link-referencia" href="#">Clique para ver a documentação</a>
+    
+    <br><br>
+    <a id="link-suporte"href="#">Clique para entrar em contato</a>
+
+    <br><br>
+    <a id="botão-voltar" href="">Voltar</a>
+    </br><br>
+    <button id="botão-fechar">Fechar Página</button>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

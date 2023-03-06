@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junção de Combinadores</title>
+
+<style>
+   /* .fundo-azul p + p{
+        background-color: lightblue;
+   } */
+   
+   /* Neste exemplo foi pego os paragrafos: Paragrafo 2 - Dentro da DIV, Paragrafo 4 - Dentro da DIV e Paragrafo 6 - Dentro da DIV
+   pois considerou toda a classe azul e os elementos que tinham o p ao lado do fechamento  */
+
+   /* .fundo-azul p ~ p{
+        background-color: lightblue;
+   } */
+
+   /* Paragrafo 2 - Dentro da DIV, foi pego por estar do lado do fechamento do p1, o p4 por estar do lado do fechamento do p3, 
+   e o p5 foi pego por estar do lado do fechamento do p2, mesmo que ele tenha sido  distanciado por um span, e o
+   p6 por estar do lado do fechamento do p5*/
+
+   .fundo-azul span ~ p{
+        background-color: lightblue;
+   }
+
+   /* P5 e P6 por serem irmãos entre si e da tag SPAN*/
+
+</style>
+
+</head>
+<body>
+
+
+    
+    <header>
+    <h1> Junção de Combinadores  </h1>
+    </header>
+    
+    <main>
+    <section>
+
+        <div class="fundo-azul">
+            <p>Paragrafo 1 - Dentro da DIV </p>
+            <p>Paragrafo 2 - Dentro da DIV</p>
+
+                <span>
+                <p>Paragrafo 3 - Dentro da DIV </p>
+                <p>Paragrafo 4 - Dentro da DIV</p>
+                </span>
+
+            <p>Paragrafo 5 - Dentro da DIV </p>
+            <p>Paragrafo 6 - Dentro da DIV</p>
+
+        </div>
+    </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

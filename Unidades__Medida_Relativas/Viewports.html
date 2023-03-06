@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewports </title>
+
+<style>
+    body{
+        margin: 20px;
+    }
+   .exemplos-01{
+        background-color: lightblue;
+    }
+    .exemplos-02{
+        background-color: lightgreen;
+    }
+
+    .exemplos-03{
+        background-color:lightsalmon;
+    }
+    .borda{
+        border: 3px solid black;
+    }
+
+</style>    
+</head>
+<body>
+    <Header><h1>Unidade de Medida: <code>Viewports</code> </h1>
+    
+    </Header>
+    
+    <main>
+        <p><code>Viewport</code> é a área visível de uma página web, podendo variar de disposito
+            para disposito. As unidades de medida <code>viewport</code>, vão ser calculadas em
+            relação ao tamanho da área em que o usuário está vendo sua página.
+        </p>
+        
+        <p> <strong>1vw</strong> = 1% do tamanho da largura da área visível da página. </p>
+
+
+        <p> <strong>1vh</strong> = 1% do tamanho da altura da área visível da página.  </p>
+    
+        <hr>
+
+        <h2>Exemplos:</h2>
+        <div class="exemplos-01" style="width: 50%;">
+            width: 50%;
+        <!-- Esse valor leva em consideração o tamanho da margem, subtraindo a margem do body (esquerda e direita) 
+        do width da pagina, ou seja se pagina for de width 500px, será removido 40px e o 50% será 230px -->
+        </div>
+            <div class="exemplos-02" style="width: 50vw">
+                width: 50vw;
+        <!-- Já o vw irá apenas pegar a metade do width, ou seja, se o width for 500px ele sserá 250px  -->
+            </div>   
+                <div class="exemplos-03" style="width: 50vh">
+                    width: 50vh;   
+                
+                </div>
+          
+        <br><hr><br>
+
+        <div class="borda" style="width: 300px;" >
+            <div class="exemplos-01" style="width: 50%;">
+                width: 50%;
+            <!-- 50% em referência ao elemento pai -->
+            </div>
+            <div class="exemplos-02" style="width: 50vw;">
+                width: 50vw;
+            <!-- 50vw em referência ao body  -->
+            </div>    
+            <div class="exemplos-03" style="width: 50vh;">
+                width: 50vh;            
+            </div>   
+        </div>    
+
+        <br><hr><br>
+   
+        <div class="exemplos-01" style="width: 10vmin;">
+            width: 10vmin;
+            <!-- Entre a largura e a altura da viewport o vmin vai pegar o menor valor para utilizar como base.
+            OU seja, se a altura for 5000 e a largura for 110000, vai usar como bas a altura, -->
+        </div>
+            <div class="exemplos-02" style="width: 10vmax">
+                width: 10vmax;        
+            </div>   
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

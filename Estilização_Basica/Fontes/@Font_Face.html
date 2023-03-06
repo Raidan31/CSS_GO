@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Face</title>
+
+<style>
+   @font-face {
+    font-family: Tilt;
+    src: url("assets/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf");
+    font-weight: normal;
+   }
+
+   @font-face {
+    font-family: Tilt;
+    src: url("assets/GolosText-VariableFont_wght.ttf");
+    font-weight: bold;
+   }
+   p{
+    font-family: Tilt;
+    font-weight: bold; 
+    /* A fonte mudou de estilo pois foi configurada por meio do font weight
+    assim: bold = golos(olhe a url)
+            normal = tilt */
+   }
+
+
+</style>    
+</head>
+<body>
+    <Header><h1>Font Face</h1>
+    
+    </Header>
+    
+    <main>
+        <p>A propriedade <code>@font-face</code> permite personalizar uma fonte para o projeto de um arquivo externo(url) ou por meio
+            da palavra chave local(): procura a fonte dentro do pc caso a fonte esteja instalada. Pode utilizar multiplos arquivos com o
+            <code>@font-face</code>, utilizando outro <code>@font-face</code>. 
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição das Imagens de Fundo</title>
+
+<style>
+   .exemplo{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4b/Chainsaw_Man_logo.png), url(https://i.pinimg.com/originals/3b/c0/36/3bc036c7e856b636f1864bb24032fd00.png);
+    background-size: 120px, 100%;
+    background-repeat: repeat;
+   }
+
+   .exemplo2{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4b/Chainsaw_Man_logo.png), url(https://i.pinimg.com/originals/3b/c0/36/3bc036c7e856b636f1864bb24032fd00.png);
+    background-size: 120px, 100%;
+    background-repeat: repeat-x;
+   }
+   .exemplo3{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4b/Chainsaw_Man_logo.png), url(https://i.pinimg.com/originals/3b/c0/36/3bc036c7e856b636f1864bb24032fd00.png);
+    background-size: 120px, 100%;
+    background-repeat: repeat-y;
+   }
+
+   .exemplo4{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4b/Chainsaw_Man_logo.png), url(https://i.pinimg.com/originals/3b/c0/36/3bc036c7e856b636f1864bb24032fd00.png);
+    background-size: 120px, 100%;
+    background-repeat: space;
+   }
+
+   .exemplo5{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4b/Chainsaw_Man_logo.png), url(https://i.pinimg.com/originals/3b/c0/36/3bc036c7e856b636f1864bb24032fd00.png);
+    background-size: 120px, 100%;
+    background-repeat: round;
+   }
+
+   .exemplo6{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4b/Chainsaw_Man_logo.png), url(https://i.pinimg.com/originals/3b/c0/36/3bc036c7e856b636f1864bb24032fd00.png);
+    background-size: 120px, 100%;
+    background-repeat: no-repeat;
+   }
+
+
+</style>    
+</head>
+<body>
+    <Header><h1>Repetição das Imagens de Fundo</h1></Header>
+
+    <main>
+
+        <p><code> background-repeat</code> Configura a Repetição de imagens. A propriedade trabalha com o eixo (x e y) 
+            então caso queira adicionar dois valores é só adicionar <code>background-repeat: repeat(espaço)round </code> </p>
+
+
+        <section>
+        
+            <P> O primeiro valor o <code>repeat</code>, que faz com que a imagem repita horizontalmente e verticalmente. </P>
+                    
+                    <div class="exemplo" ></div>
+            
+        </section>
+
+        <section>
+        
+            <P><code>repeat-x</code>, a imagem ira repetir apenas no eixo x . </P>
+                    
+                    <div class="exemplo2" ></div>
+            
+        </section>
+
+        <section>
+        
+            <P><code>repeat-y</code>, a imagem ira repetir apenas no eixo y . </P>
+                    
+                    <div class="exemplo3" ></div>
+            
+        </section>
+
+        <section>
+        
+            <P><code>space</code>, a imagem ira repetir(eixo y e x), porém não haverá cortes adicionando espaço para não cortar. </P>
+                    
+                    <div class="exemplo4" ></div>
+            
+        </section>
+
+        <section>
+        
+            <P><code>round</code>, a imagem ira ocupar o espaço inteiro, sem cortes, sem espaços e não irá ultrapassar as bordas. </P>
+                    
+                    <div class="exemplo5" ></div>
+            
+        </section>
+
+        <section>
+        
+            <P><code>no-repeat</code>, a imagem não irá se repetir. </P>
+                    
+                    <div class="exemplo6" ></div>
+            
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largura Altura</title>
+
+<style>
+    /* Propriedades
+    width: largura
+    height: altura 
+    */
+
+    header {
+        background-color: blanchedalmond;
+        width: 200;
+        height: 200;
+    }
+
+    /* auto respeita as diimensões do botão */
+    button {
+        background-color: rgb(201, 30, 210);
+        width: auto;
+        height: auto;
+        color: aqua;
+    }
+
+    /* initial aplica a propriedade o valor padrão */
+
+    div{
+        background-color: rgb(255, 220, 251);
+        width: initial;
+        height: initial;
+    }
+
+    /* inherit - faz com que a div filha herde as caracteristicas da div pai */
+    #div_01{
+        background-color: cornsilk;
+        height: 200px;
+        width: 200px;
+    }
+
+    #div_02{
+        background-color: rgb(236, 90, 122);
+        height: inherit;
+        width: inherit;
+
+    }
+
+
+</style>    
+</head>
+<body>
+    <Header><h1>Largura Altura</h1></Header>
+    <main>
+        <section>
+            <section>
+            <div>Teste initial</div>
+            <br>
+            </section>   
+            
+            <section>
+
+            <div id="div_01">Div - 01 - teste inherit
+
+            <div id="div_02">Div - 02 - teste inherit 
+            </div>
+            </div>
+
+            <br>    
+            </section>
+
+            <section>
+          <button>Botão Teste</button> 
+            </section> 
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

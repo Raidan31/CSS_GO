@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Mode</title>
+
+<style>
+    p {
+       width: 120px;
+       color: greenyellow;
+       background-color: blueviolet; 
+    }
+
+
+   #horizontal-tb{
+    writing-mode: horizontal-tb;
+   }
+
+   #vertical-rl{
+    writing-mode: vertical-rl;
+   }
+
+   #vertical-lr{
+    writing-mode: vertical-lr
+   }
+
+</style>    
+</head>
+<body>
+    <Header><h1>Propriedade: <code> word-break</code></h1>
+    
+    </Header>
+    
+    <main>
+        
+        Define a orientação do texto vertical ou horizontal
+        <br>   
+        <br>
+        <code>writing-mode: horizontal-tb;</code>
+        <p id="horizontal-tb">
+        <!-- Valor padrão -->
+            O enredo de Evangelionsepassaem2015, 
+            em um mundo que acabara de ser reconstruído após a 
+            dizimaçãodemetadedahumanidadenacatástrofequeficou 
+            conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  
+        </p>
+   
+
+        <code>writing-mode: vertical-rl</code>
+        <p id="vertical-rl">
+       
+            O enredo de Evangelionsepassaem2015, 
+            emummundoqueacabaradeserreconstruído após a 
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  
+        </p>   
+
+
+        <code>writing-mode: vertical-lr;</code>
+        <p id="vertical-lr">
+    
+            O enredo de Evangelionsepassaem2015, 
+            emummundoqueacabaradeserreconstruído após a 
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”. O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.  
+        </p>   
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

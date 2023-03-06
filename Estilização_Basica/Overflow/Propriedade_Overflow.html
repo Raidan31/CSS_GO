@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Overflow</title>
+
+<style>
+    #visible{
+        
+        background-color: orange;
+        border: 3px solid purple;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        text-overflow: visible;
+       
+    }
+    #hidden{
+        
+        background-color: orange;
+        border: 3px solid purple;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+    }
+    #scroll{
+        
+        background-color: orange;
+        border: 3px solid purple;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        overflow: scroll;
+    }
+    #auto{
+        
+        background-color: orange;
+        border: 3px solid purple;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        overflow: auto;
+    }
+</style>    
+</head>
+<body>
+    <Header><h1>Propriedade: <code> overflow</code></h1>
+    
+    </Header>
+    
+    <main>
+        <p>
+            Controla como o conteúdo vai ser exibido caso ultrapasse os limites do container, só vai funcionar em elementos em bloco
+            com uma altura maxima declarada. É possivel usar variações que são ativadas para caso o conteúdo ultrapasse o container.
+            <code> overflow-x</code> e <code> overflow-y</code> 
+
+        </p>   
+
+        <code> overflow: visible;</code>
+        <!-- Mesmo quebrando a linha o texto será visivel -->
+        <div id="visible">
+           <p>O enredo de Evangelion se passa em 2015, 
+            em um mundo que acabara de ser reconstruído após a 
+
+            
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”. </p> 
+
+            <p> O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.</p>  
+        </div>
+             
+       <br><br><br>
+
+        <p><code> overflow: hidden;</code></p>
+        <!-- Esconde os textos que passarem do container -->
+        <div id="hidden">
+           <p>O enredo de Evangelion se passa em 2015, 
+            em um mundo que acabara de ser reconstruído após a 
+
+            
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”. </p> 
+
+            <p> O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.</p>  
+        </div>
+
+        <p><code> overflow: scroll;</code></p>
+        <!-- Cria uma barra de rolagem -->
+        <div id="scroll">
+           <p>O enredo de Evangelion se passa em 2015, 
+            em um mundo que acabara de ser reconstruído após a 
+
+            
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”. </p> 
+
+            <p> O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.</p>  
+        
+        </div>
+
+        <p><code> overflow: auto;</code></p>
+        <!-- vai funcionar como um scroll porem a barra de rolagem só vai aparecer caso o conteúdo passe do 
+            tamanho do container -->
+        <div id="auto">
+           <p>O enredo de Evangelion se passa em 2015, 
+            em um mundo que acabara de ser reconstruído após a 
+
+            
+            dizimação de metade da humanidade na catástrofe que ficou 
+            conhecida como “Segundo Impacto”. </p> 
+
+            <p> O Japão ganha uma capital provisória, a Tokyo-2, cujo Governo promove a construção da futura capital denominada Tokyo-3.</p>  
+        
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

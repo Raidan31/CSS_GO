@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores Irmãos Adjacentes</title>
+<style>
+   div + p + u {
+    color: tomato;
+   }
+   
+   .fundo-azul + p {
+    background-color: lightgreen;
+   }
+</style>
+
+</head>
+<body>
+    <!-- 
+    3 - Combinadores Irmãos Adjacentes (+)
+    Vai aplicar o CSS na tag ao lado da inicial
+    [seletor] [+] [seletor]
+
+    div + p: a tag p que será alterada
+    div + p + u: apenas a tag u será alterada
+    
+    .fundo-azul + p: o Paragrafo 8 foi alterado pois é o paragrafo após a div class
+    e assim por diante
+    -->
+
+    
+    <header>
+    <h1> Combinadores Irmãos Adjacentes  </h1>
+    </header>
+    
+    <main>
+    <section>
+        <div>
+            <p>Paragrafo 1 - Dentro da DIV </p>
+            <p>Paragrafo 2 - Dentro da DIV</p>
+            <span> 
+            <p>Paragrafo 3 - Dentro da DIV, dentro da SPAN</p>
+            </span>         
+        </div>
+
+        <p>Paragrafo 4 - Fora da DIV</p>
+        <u>Paragrafo 5 - Fora da DIV</u>
+
+        <div class="fundo-azul">
+            <p>Paragrafo 6 - Dentro da DIV </p>
+            <p>Paragrafo 7 - Dentro da DIV</p>
+        </div>
+
+        <p>Paragrafo 8 - Dentro da DIV</p>
+    </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

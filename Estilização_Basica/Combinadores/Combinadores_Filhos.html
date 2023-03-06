@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores Filhos</title>
+<style>
+   
+   div > p {
+    background-color: aquamarine;
+   }
+
+   .fundo-azul > p {
+    background-color: lightsteelblue;
+   }
+    
+</style>
+
+</head>
+<body>
+    <!-- 
+    2 - Combinadores Filhos (>)
+    Seleciona todos os elementos que são filhos imediatos, ou seja, 
+    o filho direto do elemento que está especificado no seletor a esquerda
+
+    Primeiro exemplo div e p são filhos diretos. 
+    
+    Segundo Exemplo .fundo-azul > p são filhos diretos
+
+    -->
+    <header>
+    <h1> Combinadores Filhos  </h1>
+    </header>
+    
+    <main>
+    <section>
+        <div>
+            <p>Paragrafo 1 - Dentro da DIV </p>
+            <p>Paragrafo 2 - Dentro da DIV</p>
+            <span> 
+            <p>Paragrafo 3 - Dentro da DIV, dentro da SPAN</p>
+            </span>         
+        </div>
+
+        <p>Paragrafo 4 - Fora da DIV</p>
+        <p>Paragrafo 5 - Fora da DIV</p>
+
+        <div class="fundo-azul">
+            <p>Paragrafo 6 - Dentro da DIV </p>
+            <p>Paragrafo 7 - Dentro da DIV</p>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

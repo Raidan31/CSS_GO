@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade rem </title>
+
+<style>
+   .exemplos-01{
+        background-color: lightblue;
+    }
+    .exemplos-02{
+        background-color: lightgreen;
+    }
+
+    .exemplos-03{
+        background-color: lightyellow;
+    }
+
+
+</style>    
+</head>
+<body>
+    <Header><h1>Unidade de Medida: <code>rem</code> </h1>
+    
+    </Header>
+    
+    <main>
+        <p>A unidade de medida <code>rem</code> ou (root em), tem um funcionamento semelhante
+        à unidade de medida <code>em</code>, porém a diferença é que, enuanto o <code>em</code>
+        utiliza o elemento pai como referência, o <code>rem</code> está relacionado ao tamanho da
+        fonte do elemento raíz, chamado root, que no caso é a tag <code>html</code>. </p> 
+
+        <p>O valor do <code>html</code>(valor padrão do html) será considerado ainda que esteja tratando de outras propriedades além do <code>font-size</code> 
+        caso declare o <code>width: 2rem</code> será com base no valor do html.    
+        </p>
+        <hr>
+        <h2>Exemplos:</h2>    
+        <p style="font-size: 1rem;">
+            font-size: 1rem = 16px;
+        </p>
+
+        <p style="font-size: 2rem;">
+            font-size: 2rem = 32px;
+        </p>
+
+        <p style="font-size: 3rem;">
+            font-size: 3rem = 48px;
+        </p>
+        <hr>
+
+        <h2>Exemplos:</h2>
+        <div class="exemplos-01" style="font-size: 20px;">
+            font-size: 20px;
+            <div class="exemplos-02" style="font-size: 2rem;">
+                font-size: 2rem = 32px;    
+                <div class="exemplos-03" style="font-size: 3rem;">
+                    font-size: 3rem = 48px;    
+        
+                
+                </div>
+            </div>
+        </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

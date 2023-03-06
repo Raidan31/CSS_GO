@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentagem</title>
+
+<style>
+    .Pixel{
+        width: 300px;
+        background-color: lightblue;
+    }
+    .Porcentagem{
+        width: 50%;
+        background-color: lightgreen;
+    }
+
+    #elemento-pai{
+        width: 500px;
+        font-size: 40px;
+        border: 5px solid black
+    }
+</style>    
+</head>
+<body>
+    <Header><h1>Porcentagem</h1>
+    
+    </Header>
+    
+    <main>
+    <p>Pixel vs Porcentagem</p>
+
+    <div class="Pixel">
+        width: 300px
+    <!-- Pixel terá um valor constante -->
+    </div>
+
+    <div class="Porcentagem">
+        width: 50%
+    <!-- Os 50% estão em relação ao body, ou seja, se mudar o tamanho da tela a porcentagem será afetada. -->
+    </div>
+<hr>
+    <p>Elemento Pai possui uma largura de 500px e font-size de 40px    </p>
+
+    <div id="elemento-pai">
+        <div class="Pixel">         width: 300px; </div>
+        <div class="Porcentagem">         width: 50% </div>
+    <!-- O valor do with de 50% vai ser constante, pois agora está em relação aos 500px do elemento pai 
+    incluindo o font size que agora foi para 20px-->
+
+    </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

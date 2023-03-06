@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+
+<style>
+   /* o padding separa um elemento interno é como se ele separasse o conteúdo do elemento das bordas que ele possui 
+   
+    Um valor aplica nos 4 lados
+    Dois valores: primeira valor - em cima e embaixo, segundo valor aos lados
+    Tres valores: em cima, lados e baixo
+    Quatro valores: em cima, direita, baixo e esquerda
+
+
+
+    1 - padding-top
+    
+    2 - padding-right
+
+    3 - padding-botton
+
+    4 - padding-left
+
+   */
+
+   div {
+        width: 200px;
+        color: white;
+    }
+
+   #elemento_01{
+        background-color: orange;
+        padding: 20px 40px 50px 70px;    
+        }
+
+   /* Aqui tbm é aplicado as propriedades initial e Inherit 
+    Auto centraliza os elementos de forma horizontal
+    */
+
+    #elemento_02{
+        background-color: purple;
+        box-sizing: border-box;
+       
+    }
+
+    /* width = largura + borda + padding 
+
+    Portanto, se aumetar o padding aumentará o width
+    desta forma utiliza-se a propriedade box sizing para manter o elemento na mesma proporção inicial
+
+    o box-sizing vai diminuir o width inicial proporcionalmete ao aumento do padding para manter a proporção inicial
+    ex:
+        sem o box-sizing haverá acréscimo no width
+        width inicial de 200px
+        widith + 40 de padding(esquerda e direita)
+        200px + 20px + 20px = 240px width final com acréscimo do padding
+
+        com box-sizing não haverá acréscimo
+        width inicial de 200px
+        width inicial + 40 de padding(esquerda e direita)
+        width inicial será reduzido a 160px
+        realizando a soma = 160px + 40px
+        resultando no width inicial de 200px
+
+    */
+</style>    
+</head>
+<body>
+    <Header></Header>
+
+    <main>
+        <div id="elemento_01">
+            Após uma traição da Yakuza, Denji acaba sendo assassinado pela organização criminosa e, em seus últimos instantes consciente, o protagonista realiza um contrato com Ponchita. Ele então renasce como o Homem-Motosserra – um humano com coração de demônio.
+        </div>
+
+        <div id="elemento_02">
+            Após uma traição da Yakuza, Denji acaba sendo assassinado pela organização criminosa e, em seus últimos instantes consciente, o protagonista realiza um contrato com Ponchita. Ele então renasce como o Homem-Motosserra – um humano com coração de demônio.
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
